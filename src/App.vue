@@ -57,7 +57,7 @@ export default {
     processCommand(command){
       const app = this
       return new Promise(async response => {
-        let res = await app.axios.post('http://bridge.scryptachain.org:4498', {command: command})
+        let res = await app.axios.post('https://connect.scryptachain.org', {command: command})
         response(JSON.stringify(res.data))
       })
     }
