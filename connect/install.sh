@@ -40,6 +40,9 @@ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install -y nodejs
 npm install pm2 -g
 
+#INSTALL DEPENDENCIES
+npm install
+
 #SETTING UP FIREWALL
 ufw allow 22
 ufw deny 42223
@@ -56,3 +59,4 @@ sudo ufw allow 'Nginx Full'
 sudo add-apt-repository ppa:certbot/certbot -y
 sudo apt update
 sudo apt install python-certbot-nginx -y
+
